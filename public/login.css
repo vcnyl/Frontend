@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background:  #005ac9;
+
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+
+
+}
+
+.container .title {
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before {
+    content: " ";
+    left: 200;
+    bottom: -5px;
+    height: 6px;
+    width: 86px;
+    border-radius: 5px;
+    background:#254877;
+    position: absolute;
+}
+
+.content form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 25px 15px;
+}
+
+form .user-details .input-inbox {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+form .input-inbox span.details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.user-details .input-inbox input,
+.user-details .input-inbox textarea,
+.user-details .input-inbox select {
+    height: 30px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-inbox textarea {
+    height: 100px;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid,
+.user-details .input-inbox textarea:focus,
+.user-details .input-inbox textarea:valid,
+.user-details .input-inbox select:focus,
+.user-details .input-inbox select:valid {
+    border-color: #254877;
+}
+
+.content form .category {
+      display: flex;
+    flex-wrap: wrap;
+
+    margin: 25px 75px;
+
+}
+
+form .category input[type="radio"] {
+    display: none;
+}
+
+form .category label {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Jarak antara elemen label */
+    cursor: pointer;
+}
+
+form .category label .dot {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px; /* Jarak antara lingkaran dan teks */
+    background: #d9d9d9;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+/* Ganti warna latar belakang lingkaran saat dipilih */
+#dot-1:checked ~ .category label.one .dot {
+    background: black;
+}
+
+#dot-2:checked ~ .category label.two .dot {
+    background: #29B4E0;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+/* CSS untuk mengatur lebar dan tinggi tombol */
+form .button input {
+    width: 340px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background: #254877;
+    margin-top: 10px;
+}
+
+form .button input:hover {
+    background:  #4781cb;
+}
+
+@media (max-width: 584px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+form .category {
+    width: 100%;
+}
+.forgot {
+    color:#2f96f7; /* Warna teks tombol */
+    font-weight: 600;
+
+}
+header {
+    background-color: #CCCCCC; /* Gray background color */
+    padding: 10px; /* Add some padding for spacing */
+}
+
+.title-bar {
+    text-align: left; /* Position title to the left */
+    margin-left: 20px; /* Add some margin for spacing from the left */
+}

@@ -1,0 +1,247 @@
+body {
+    min-height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #254877;
+}
+
+.container_form {
+    margin-top: 10px;
+    max-width: 800px;
+    max-height: 800px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.container_form .title {
+    font-size: 24px;
+    font-weight: 500;
+   display: flex;
+}
+
+.container_form .title::before {
+    content: " ";
+    left: 0;
+    bottom: -5px;
+    height: 5px;
+    width: 30px;
+    border-radius: 5px;
+
+    position: absolute;
+}
+
+.content form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+form .user-details .input-inbox {
+    margin-bottom: 20px;
+    width: 48%; /* Ubah lebar elemen input-inbox */
+}
+form .user-details .input-doc {
+
+    width: 48%; /* Ubah lebar elemen input-inbox */
+}
+
+
+form .input-inbox span.details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+.row {
+    font-size: 14px;
+            display: flex; /* Menggunakan flexbox untuk mengatur baris */
+            justify-content: space-between; /* Membuat elemen-elemen berada di sisi kanan dan kiri */
+            align-items: center; /* Menengahkan elemen-elemen secara vertikal */
+            padding: 10px; /* Menambahkan padding agar kontennya tidak terlalu dekat dengan tepi baris */
+        }
+
+        /* CSS untuk mengatur konten kiri */
+        .left-content {
+            align: center;
+            flex: 1; /* Memberikan rasio fleksibilitas yang sama pada kolom kiri */
+            text-align: left;
+        }
+
+        /* CSS untuk mengatur konten kanan */
+        .right-content {
+            align: center;
+            flex: 1; /* Memberikan rasio fleksibilitas yang sama pada kolom kanan */
+        }
+
+
+
+.user-details .input-inbox input,
+.user-details .input-inbox textarea,
+.user-details .input-inbox select {
+    height: 30px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-inbox textarea {
+    height: 100px;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid,
+.user-details .input-inbox textarea:focus,
+.user-details .input-inbox textarea:valid,
+.user-details .input-inbox select:focus,
+.user-details .input-inbox select:valid {
+    border-color: #29B4E0;
+}
+
+.content form .category {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+form .category input[type="radio"] {
+    display: none;
+}
+
+form .category label {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Jarak antara elemen label */
+    cursor: pointer;
+}
+
+form .category label .dot {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px; /* Jarak antara lingkaran dan teks */
+    background: #d9d9d9;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+/* Ganti warna latar belakang lingkaran saat dipilih */
+#dot-1:checked ~ .category label.one .dot {
+    background: black;
+}
+
+#dot-2:checked ~ .category label.two .dot {
+    background: #29B4E0;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+/* CSS untuk mengatur lebar dan tinggi tombol */
+form .button input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background: #254877;
+    margin-top: 10px;
+}
+
+form .button input:hover {
+    background: linear-gradient(-135deg, #29B4E0, #D0E6ED);
+}
+
+@media (max-width: 584px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+form .category {
+    width: 100%;
+}
+
+.header {
+    background-color: #D9D9D9;
+    padding: 8px 0;
+    color: #254877;
+    position: fixed; /* Tambahkan properti position */
+    top: 0; /* Tambahkan properti top */
+    width: 100%; /* Agar header mengisi seluruh lebar */
+}
+
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* CSS untuk sidebar */
+.profile-image {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make it a circle */
+    margin: 0 auto 10px; /* Center the image horizontally and add space below */
+    display: block; /* Ensure it's treated as a block element */
+}
+
+.modal-box {
+    position: fixed; /* Set the position to fixed for a modal box */
+    top: 0%; /* Center the modal vertically */
+    right: 0%; /* Center the modal horizontally */
+    width: 400px;
+    background-color: white; /* Set the background color for the modal box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a box shadow for a slight depth effect */
+}
+
+/* Additional styling for the profile modal */
+.modal-content {
+    max-width: 400px; /* Set the maximum width of the modal */
+    padding: 20px; /* Add some padding inside the modal */
+    text-align: center; /* Center the content */
+}
+
+.profile-info p {
+    font-weight: bold;
+    margin: 5px 0; /* Add some margin to the profile info paragraphs */
+}
+
+.close {
+    float: right; /* Float the close button to the right */
+    font-size: 20px; /* Adjust the font size of the close button */
+    font-weight: bold; /* Make the close button bold */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.logo1 {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Set the height equal to the width for a perfect circle */
+    border-radius: 50%; /* Add border-radius to make it a circle */
+    margin-top: 5px;
+}
+
+

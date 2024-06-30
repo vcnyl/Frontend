@@ -1,0 +1,245 @@
+/* Add your custom styles here */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+}
+
+header {
+    background-color: #D9D9D9;
+    padding: 15px 0;
+}
+
+.gambar-fleksibel {
+    width: 100%;
+    height: 150px; /* Tentukan tinggi sesuai kebutuhan */
+    object-fit: contain;
+  }
+
+h1 {
+    margin-top: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #254877;
+    font-size: 25px;
+}
+
+.profile-image {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make it a circle */
+    margin: 0 auto 10px; /* Center the image horizontally and add space below */
+    display: block; /* Ensure it's treated as a block element */
+}
+
+.modal-box {
+    position: fixed; /* Set the position to fixed for a modal box */
+    top: 0%; /* Center the modal vertically */
+    right: 0%; /* Center the modal horizontally */
+    width: 400px;
+    background-color: white; /* Set the background color for the modal box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a box shadow for a slight depth effect */
+}
+
+/* Additional styling for the profile modal */
+.modal-content {
+    max-width: 400px; /* Set the maximum width of the modal */
+    padding: 20px; /* Add some padding inside the modal */
+    text-align: center; /* Center the content */
+}
+
+.profile-info p {
+    font-weight: bold;
+    margin: 5px 0; /* Add some margin to the profile info paragraphs */
+}
+
+.close {
+    float: right; /* Float the close button to the right */
+    font-size: 20px; /* Adjust the font size of the close button */
+    font-weight: bold; /* Make the close button bold */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.logo {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Set the height equal to the width for a perfect circle */
+    border-radius: 50%; /* Add border-radius to make it a circle */
+    margin-top: 5px;
+}
+
+.container-fluid {
+    max-width: 100%;
+}
+/* CSS untuk sidebar */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #254877;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    font-weight: bold;
+}
+
+.sidebar.active {
+    width: 250px;
+}
+
+.tombol:hover {
+    background-color: #8c8c8c;
+}
+
+.scroll-wrapper {
+    overflow-x: auto; /* Enable horizontal scrolling for the wrapper */
+    overflow-y: auto; /* Enable vertical scrolling for the wrapper */
+    height: 100%; /* Set a maximum height for vertical scrolling, adjust as needed */
+    width: 100%; /* Take the full width of the viewport */
+}
+
+.content-box {
+    max-width: 100%;
+}
+
+.content {
+    white-space: nowrap;
+    margin-left: 0;
+    transition: margin-left 0.5s;
+}
+
+.content.active {
+    margin-left: 250px;
+    transition: margin-left 0.5s;
+}
+
+.container {
+    height: 60px;
+    max-width: 100%;
+    background-color: #254877;
+}
+
+.sidebar-logo {
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 14px;
+}
+
+.sidebar-logo img {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Set the height equal to the width for a perfect square */
+}
+
+.judul {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.input-group {
+    width: 90%;
+    width: 500px; /* Adjust the max-width as needed */
+}
+
+.form-control {
+    border-radius: 20px; /* Add border-radius to make it rounded */
+}
+.btn {
+    font-weight: bold;
+    width: 70px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    font-weight: bold;
+    background-color: #FCD400; /* Warna latar belakang */
+    color: black; /* Warna teks */
+    padding: 8px 16px; /* Padding tombol */
+    border: none; /* Tanpa border */
+    border-radius: 4px; /* Border radius untuk sudut */
+    cursor: pointer; /* Mengubah kursor menjadi pointer saat dihover */
+    margin-right: 8px; /* Margin kanan antara tombol */
+}
+
+/* Style untuk tombol Hapus */
+button.delete {
+    font-weight: bold;
+    background-color: #dc3545; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    padding: 8px 16px; /* Padding tombol */
+    border: none; /* Tanpa border */
+    border-radius: 4px; /* Border radius untuk sudut */
+    cursor: pointer; /* Mengubah kursor menjadi pointer saat dihover */
+}
+
+/* Hover effect untuk kedua tombol */
+/* button:hover,
+button.delete:hover {
+    opacity: 0.10; /* Mengurangi opasitas saat dihover */} */
+
+
+/* Optional: Margin tambahan untuk memisahkan tombol dari elemen lainnya */
+button,
+button.delete {
+    margin-bottom: 8px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        padding: 8px 16px;
+    }
+    .sidebar-logo img {
+        width: 30px;
+        height: 30px;
+    }
+    .container {
+        height: auto;
+    }
+    .judul {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+    .search-box {
+        margin-top: 8px;
+    }
+}
